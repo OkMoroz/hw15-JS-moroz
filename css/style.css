@@ -1,0 +1,139 @@
+body {
+  background-color: #dfdfd0;
+  font-family: Arial, sans-serif;
+  font-size: 30px;
+  text-align: center;
+}
+#title {
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  color: rgb(227, 42, 67);
+  margin: 120px auto 60px;
+  text-transform: uppercase;
+}
+
+.form {
+  border: 3px solid rgb(38, 14, 92);
+  background-color: rgba(37, 14, 92, 0.184);
+  padding: 15px;
+  border-radius: 5px;
+  width: 50%;
+  margin: auto;
+}
+.fullName,
+.email,
+.phone {
+  color: rgb(38, 14, 92);
+  display: flex;
+  flex-direction: row;
+  font-size: 30px;
+  gap: 15px;
+  margin: 5px auto;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+input[type="text"] {
+  border: 3px solid rgb(227, 42, 67);
+  font-size: 17px;
+  width: 50%;
+  padding: 8px 0;
+  border-radius: 5px;
+  color: rgb(227, 42, 67);
+  font-weight: 400;
+}
+input[type="email"] {
+  border: 3px solid rgb(227, 42, 67);
+  font-size: 17px;
+  width: 50%;
+  padding: 8px 0;
+  border-radius: 5px;
+  color: rgb(227, 42, 67);
+  font-weight: 400;
+}
+input[type="tel"] {
+  border: 3px solid rgb(227, 42, 67);
+  font-size: 17px;
+  width: 40%;
+  padding: 8px 0;
+  border-radius: 5px;
+  color: rgb(227, 42, 67);
+  font-weight: 400;
+}
+
+#btn,
+#btn-back {
+  border: 3px solid rgb(227, 42, 67);
+  font-size: 20px;
+  padding: 10px 30px;
+  border-radius: 5px;
+  color: rgb(227, 42, 67);
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 35px;
+}
+#orderContainer {
+  display: flex;
+  justify-content: center;
+  border: 3px solid rgb(38, 14, 92);
+  background-color: rgba(37, 14, 92, 0.184);
+  padding: 50px;
+  border-radius: 5px;
+  width: 60%;
+  margin: auto;
+}
+.jsThead {
+  border: 3px solid rgb(227, 42, 67);
+  background-color: #f0f0f0;
+  color: rgb(38, 14, 92);
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  gap: 15px;
+  padding: 10px 30px;
+  margin: 25px auto;
+}
+.jsInput {
+  border: 3px solid rgb(227, 42, 67);
+   color: rgb(38, 14, 92);
+  background-color: #f0f0f08f;
+  font-size: 25px;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+  margin-top: 35px;
+  padding: 30px 40px;
+}
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(22, 5, 61, 0.557);
+  transition: opasity 0.75s, visibility 0.75s;
+}
+.loader--hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+.loader::after {
+  content: "";
+  width: 75px;
+  height: 75px;
+  border: 15px solid #dddddd;
+  border-top-color: rgb(227, 42, 67);
+  border-radius: 50%;
+  animation: loading 0.75s ease infinite;
+}
+@keyframes loading {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
